@@ -7,7 +7,7 @@ const bcrypt = require("bcryptjs");
 const {userAuth} = require("../utils/userAuth");
 
 
-authRouter.post("/api/signup",async (req, res) => {
+authRouter.post("/signup",async (req, res) => {
     try {
       ValidationSignUp(req);
       const { firstName, lastName, emailId, password,age,gender, skills } = req.body;
